@@ -5,12 +5,34 @@ const toys = [
     {id: 40, name: 'El gato con Guantes'},
     {id: 40, name: 'El gato felix'}
     ];
-    for (var toy of toys) {
+    // al revés 
+   //  let newToys =[];
+   // for (let i=toys.length - 1; i >=0; i--) {
+      // let toy = toys[i];
+      // if (toy.name.includes('gato')) {
+         // toys.splice(i, 1);
+      // //  newToys.push(toy);
+      // }
+   // } console.log(toys);
+   let newToys =[];
+   for (let i=0; i <toys.length; i++) {
+      let toy = toys[i];
+      if (!toy.name.includes('gato')) {
+         newToys.push(toy);
        
-       if(toy.name.includes('gato'))
-       console.log( toys.indexOf(toy) +  " tiene que ser eliminado");
-   toys.splice(3,2);
-       //    toys.splice(3,2);
-    //    console.log(toy);
-       console.log(toy);
-    }
+         //  toys.splice(toy, i);
+      } 
+       
+      }
+ console.log(newToys);
+
+
+   // let newToys =[];
+   // con array al derecho
+// for (let i=0; i <toys.length; i++) {
+   // let toy = toys[i];
+   // if (toy.name.includes('gato')) {
+      //  toys.splice(toy, i);
+   // } 
+    
+// } console.log(toys);
